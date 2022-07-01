@@ -20,7 +20,7 @@ authorpos.innerText="-"+quotes[quoteNumber].author;
 function quoteChange(){
     let rand_num=parseInt((Math.random()*10)%(quotes.length));
     if (rand_num==quoteNumber){
-        while(rand_num!=quoteNumber){
+        while(rand_num==quoteNumber){
             rand_num=parseInt((Math.random()*10)%(quotes.length));
         }
     }
